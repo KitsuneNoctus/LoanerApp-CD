@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2302BF2499D050007C0EAA /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2302BE2499D050007C0EAA /* ItemStore.swift */; };
 		3F478686249859690057409A /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F478684249859690057409A /* Item+CoreDataClass.swift */; };
 		3F478687249859690057409A /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F478685249859690057409A /* Item+CoreDataProperties.swift */; };
 		3F478689249859F80057409A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F478688249859F70057409A /* Item.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F2302BE2499D050007C0EAA /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 		3F478684249859690057409A /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3F478685249859690057409A /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F478688249859F70057409A /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				3F478684249859690057409A /* Item+CoreDataClass.swift */,
 				3F7A59CB249848390064482F /* LoanedItems.xcdatamodeld */,
 				448856872239D544001EDDC4 /* Loanee.swift */,
+				3F2302BE2499D050007C0EAA /* ItemStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				3F7A59CD249848390064482F /* LoanedItems.xcdatamodeld in Sources */,
 				E929E9692124EB7E0018488C /* AppDelegate.swift in Sources */,
 				E969554E21277C3100457E12 /* ItemEditorViewController.swift in Sources */,
+				3F2302BF2499D050007C0EAA /* ItemStore.swift in Sources */,
 				448856882239D544001EDDC4 /* Loanee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
