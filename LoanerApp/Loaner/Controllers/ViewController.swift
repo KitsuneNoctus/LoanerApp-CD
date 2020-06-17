@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
     
@@ -28,9 +29,18 @@ class ViewController: UIViewController {
         collectionView.collectionViewLayout = flow
     }
     
-    func createNewItem() -> Item {
-        return Item(itemTitle: "Untitled Item")
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+
+        // Save the new items in the Managed Object Context
+        store.saveContext()
     }
+    
+    func createNewItem() -> Item {
+       let newItem = NSEntityDescription.insertNewObject(forEntityName: "Item", into: store.persistentContainer.viewContext) as! Item
+       return newItem
+    }
+
     
     func add(saved item: Item) {
         items.insert(item, at: 0)
